@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-echo "--------> Installing pdftool"
+BUILD_DIR=$1
+
+echo "--------> Installing pdftool in $BUILD_DIR"
 
 cd $BUILD_DIR
 DOWNLOAD_SCRIPT="$BUILD_DIR/bin/download-pdf-tool"
