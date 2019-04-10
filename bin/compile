@@ -3,4 +3,6 @@
 echo "--------> Installing pdftool"
 
 cd $BUILD_DIR
-bundle exec rake pdf_tool:download
+DOWNLOAD_SCRIPT="$BUILD_DIR/bin/download-pdf-tool"
+
+[ -f $DOWNLOAD_SCRIPT ] && $DOWNLOAD_SCRIPT
