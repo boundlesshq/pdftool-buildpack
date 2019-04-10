@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "--------> Installing pdftool"
+
+cd $BUILD_DIR
+bundle exec rake pdf_tool:download
